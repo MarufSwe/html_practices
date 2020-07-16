@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+
+	<form action="#" method="POST">
+		<fieldset style="width: 600px">
+			<legend style="color: red"> Contact with Maruf</legend><br>
+		Name
+		<input type="text" name="text" placeholder="Enter your name"> <br><br>
+		Email
+		<input type="Email" name="Email" placeholder="Email here"><br><br>
+		Country
+		<input type="text" name="text" placeholder="Country"><br><br><br>
+
+
+		<h4 style="color: green"><u>Select gender</u></h4>
+		<input type="radio" name="gender"> Male<br>
+		<input type="radio" name="gender"> Femal<br>
+		<input type="radio" name="gender"> Other<br>
+
+
+		<h4 style="color: green"><u>Occupation</u></h4>
+		<input type="checkbox" name="occupation"> Student<br>
+		<input type="checkbox" name="occupation"> Businessman<br>
+		<input type="checkbox" name="occupation"> Job Holder<br>
+
+
+		<h4 style="color: green"><u>Favorite game</u></h4>
+		<select> <!--use multiple after select, if wanna select multiple here-->
+			<option>Cricket</option>
+			<option>Football</option>
+			<option>WWE</option>
+			<option>Tennis</option>
+		</select> <br><br>
+
+
+		<h4 style="color: green"><u>Favorite Food</u></h4>
+		<input list="food">
+		<datalist id="food">
+			<option value="Fruit">
+			<option value="Rice">
+			<option value="Dessert">
+			<option value="Drinks">
+		</datalist><br>
+
+
+		<h4 style="color: green"><u>Choose your Image</u></h4>
+		<input type="file" name="file"><br><br><br>   <!-- input types can be 'date', 'range', 'number', 'color', 'url', 'tel' etc. -->
+
+
+		<textarea cols="30" rows="5" placeholder="Leave comments here"></textarea>
+
+		 <br><br>
+		<input type="submit" value="send">
+
+		</fieldset>
+	</form>
+
+</body>
+</html>
