@@ -1,69 +1,103 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>HTML Layout 2</title>
+  <title>Layout Design</title>
 </head>
 
 <body>
+  <div class="body">
 
-    <table style="height: 800px; width:100%; font:18px Arial; background: #a4b0be">
-        <tr>
-            <td colspan="3" style="height: 50px; background-color:#FDA7DF">
+    <header>
+      <ul>
+        <li style="margin-left: 30px">Home</li>
+        <li>Our Team</li>
+        <li>Projects</li>
+        <li>Contacts</li>
+        <li style="margin-right: 10px"><input type="search" placeholder="search query"></li>
+        <button style="background: black; color: white">go!</button>
+    </ul>
+</header>
 
-                <ul id="menu">
-                    <li style="margin-left: 30px">home</li>
-                    <li>Our Team</li>
-                    <li>Projects</li>
-                    <li>Contacts</li>
-                    <li style="margin-right: 10px"><input type="search" placeholder="search query"></li>
-                    <button style="background: black; color: white">go!</button>
-                </ul>
-
-            </td>
-        </tr>
-
-        <tr style="height:170px">
-
-            <td style="background-color: white">
-                <h2 style="text-align: center; font-size: 18px; color: black; font:42px cursive">ArticleHeading</h2>
-                <p style="margin-left: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-
-                
-                <h2 style="font:42px cursive; margin-left: 10px">Subsection</h2>
-                <p style="margin-left: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-
-                
-                <h2 style="font:42px cursive; margin-left: 10px">Another Subsection</h2>
-                <p style="margin-left: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-            </td>
-
-            <td style="width:20%; padding:20px; background-color:#FDA7DF; vertical-align: top;">
-                <ul style="line-height:30px;">
-                    <h1 style="font:42px cursive"><b>Releted</b></h1>
-                    <li><a href="#">i belive i can fliy...</a></li>
-                    <li><a href="#">i belive i can touch the sky...</a></li>
-                    <li><a href="#">oh i do like to do beside the...</a></li>
-                    <li><a href="#">headline of sports news</a></li>
-                </ul>
-            </td>
-
-        </tr>
-
-        <tr>
-            <td colspan="3" style="height: 50px; background-color:white;">
-                <h1 style="font:16px Arial; margin-left: 10px; color: black">&#169; all right reserved</h1>
-            </td>
-        </tr>
-    </table>
+<section>
+  <article>
+    <h2 style="text-align: center; color: black; font:42px cursive">ArticleHeading</h2>
+    <p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
 
 
-    <style>
-        #menu li{
-            font-size: 18px;
-            display: inline;
-            margin-right: 180px;
-        }
+    <h2 style="font:42px cursive;">Subsection</h2>
+    <p style="margin-left: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
 
-    </style>
+
+    <h2 style="font:42px cursive;">Another Subsection</h2>
+    <p style="margin-left: 10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
+</article>
+
+<aside>
+    <ul>
+        <h1 style="font:42px cursive">Releted</h1>
+        <li><a href="#">i belive i can fliy...</a></li>
+        <li><a href="#">i belive i can touch the sky...</a></li>
+        <li><a href="#">oh i do like to do beside the...</a></li>
+        <li><a href="#">headline of sports news</a></li>
+    </ul>
+</aside>
+</section>
+
+<footer>
+  <p>&#169;Copy right all reserved by layout</p>
+</footer>
+
+</div>
+
 </body>
+
+
+<style>
+  * {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FDA7DF;
+    padding: 1px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+li{
+    font-size: 18px;
+    display: inline;
+    margin-right: 180px;
+}
+
+
+article {
+    float: left;
+    width: 80%;
+    background-color: white;
+    height: 550px;
+    color: black;
+}
+
+
+aside {
+    float: left;
+    width: 20%;
+    height: 550px; 
+    background: #FDA7DF;
+    padding: 2px;
+    line-height:30px;
+    color: black;
+}
+
+
+footer {
+    background-color: blue;
+    padding: 30px;
+    color: black;
+
+}
+}
+</style>
 </html>
