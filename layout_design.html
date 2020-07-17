@@ -1,39 +1,96 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>HTML Layout</title>
+  <title>Layout Design</title>
 </head>
 
 <body>
+  <div class="body">
 
-    <table style="height: 800px; width:100%; font:18px Arial">
-        <tr>
-            <td colspan="3" style="height: 50px; background-color:blue;">
-                <h1 style="font-size:18px; text-align: center; color: white">Holy Grail Layout</h1>
-            </td>
-        </tr>
+    <header>
+      <h5>Holy Grail Layout</h5>
+    </header>
 
-        <tr style="height:170px;">
-            <td style="width:15%; background-color:#00bfff">
-                <h1 style="font-size:18px; text-align: center; color: white">Nav</h1>
-            </td>
+    <section>
+      <nav>
+        <h1>Nav</h1>
+      </nav>
 
+      <article>
+        <h1>Main Content</h1>
+      </article>
 
-            <td style="background-color:#a4b0be">
-                <h2 style="text-align: center; font-size: 18px; color: white">Main Content</h2>
-            </td>
+      <aside>
+        <h1>Sidebar</h1>
+      </aside>
+    </section>
 
+    <footer>
+      <p>Footer</p>
+    </footer>
 
-            <td style="width:15%; background-color:#00bfff">
-                <h1 style="font-size:18px; text-align: center; color: white">Sidebar</h1>
-            </td>
-        </tr>
+  </div>
 
-        <tr>
-            <td colspan="3" style="height: 50px; background-color:blue;">
-                <h1 style="font-size:18px; text-align: center; color: white">Footer</h1>
-            </td>
-        </tr>
-    </table>
 </body>
+
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+  }
+
+  header {
+    background-color: blue;
+    padding: 1px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  nav {
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 500px; 
+    background: #64b5f6;
+    padding: 100px;
+    color: white;
+  }
+
+
+  article {
+    float: left;
+    padding: 100px;
+    width: 60%;
+    text-align: center;
+    background-color: #bdbdbd;
+    height: 500px;
+    color: white;
+  }
+
+
+  aside {
+    float: left;
+    width: 20%;
+    height: 500px; 
+    text-align: center;
+    background: #64b5f6;
+    padding: 100px;
+    color: white;
+  }
+
+
+  footer {
+    background-color: blue;
+    padding: 40px;
+    text-align: center;
+    color: white;
+
+  }
+}
+</style>
 </html>
